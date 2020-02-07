@@ -10,8 +10,8 @@ const Quote = {
         right: '\uF008\uF009\uF0A0'
     },
     maxLevel: 3,
-    beforeLeft: ' \n\t\u00a0[(',
-    afterRight: ' \n\t\u00a0!?.:;#*,…)',
+    beforeLeft: ' \n\t\u00a0[(\uFEFF',
+    afterRight: ' \n\t\u00a0!?.:;#*,…)\uFEFF',
     process(params) {
         let text = params.context.text;
         const count = this.count(text);
